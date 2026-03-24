@@ -78,13 +78,7 @@ Open the dev container
 VScode F1 > Dev Containers : Reopen in devcontainer
 ```
 
-Installing dependencies
-
-```
-pnpm install
-```
-
-And running the setup script (initializes git repository and installs playwright)
+Run the setup script (initializes git repository & setups shadcn & installs playwright)
 
 ```
 pnpm run setup
