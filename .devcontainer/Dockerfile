@@ -35,3 +35,7 @@ RUN apt-get update \
     libgles2 \
     x264 \
     && rm -rf /var/lib/apt/lists/*
+
+# Create .codex folder to prevent write issues
+RUN mkdir -p /home/node/.codex \
+    && chown -R node:node /home/node/.codex
