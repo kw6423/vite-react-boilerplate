@@ -86,16 +86,6 @@ pnpm run setup
 
 Congrats! You're ready to starting working on that new project!
 
-If you'd rather run the commands above in one go, check out the command below:
-
-```
-git clone https://github.com/kw6423/vite-react-boilerplate &&\
-cd vite-react-boilerplate &&\
-rm -rf .git &&\
-pnpm install &&\
-pnpm run setup
-```
-
 ## Important Note
 
 1. This boilerplate project does not include a demo. At most, a few utilities (types, devtools, initial home page routes) are included. There is no glue to get in your way when trying to modify the template.
