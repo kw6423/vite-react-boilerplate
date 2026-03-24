@@ -57,7 +57,7 @@ If you'd like to use the included Dockerfile then [Docker](https://www.docker.co
 Getting started is a simple as cloning the repository
 
 ```
-git clone git@github.com:RicardoValdovinos/vite-react-boilerplate.git
+git clone https://github.com/kw6423/vite-react-boilerplate
 ```
 
 Changing into the new directory
@@ -70,6 +70,12 @@ Removing the .git folder (and any additional files, folders or dependencies you 
 
 ```
 rm -rf .git
+```
+
+Open the dev container
+
+```
+VScode F1 > Dev Containers : Reopen in devcontainer
 ```
 
 Installing dependencies
@@ -89,7 +95,7 @@ Congrats! You're ready to starting working on that new project!
 If you'd rather run the commands above in one go, check out the command below:
 
 ```
-git clone git@github.com:RicardoValdovinos/vite-react-boilerplate.git &&\
+git clone https://github.com/kw6423/vite-react-boilerplate &&\
 cd vite-react-boilerplate &&\
 rm -rf .git &&\
 pnpm install &&\
