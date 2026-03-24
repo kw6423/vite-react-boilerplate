@@ -24,6 +24,11 @@ export default ({ mode }) => {
 				],
 			}),
 		],
+		resolve: {
+			alias: {
+				"@": path.resolve(__dirname, "./src"),
+			},
+		},
 		server: {
 			host: true,
 			port: Number(process.env.VITE_PORT),
