@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Vite React Boilerplate",
+	// Build on top of the stock image so browser runtime deps are present for Playwright.
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"-github.copilot-chat",
+				"steoates.autoimport",
+				"formulahendry.auto-rename-tag",
+				"mikestead.dotenv",
+				"wayou.vscode-todo-highlight",
+				"yoavbls.pretty-ts-errors",
+				"dbaeumer.vscode-eslint",
+				"ms-playwright.playwright",
+				"shd101wyy.markdown-preview-enhanced",
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss",
+				"ms-azuretools.vscode-docker",
+				"donjayamanne.githistory"
+			]
+		}
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		5173
+	],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "chmod +x .devcontainer/postCreate.sh && bash .devcontainer/postCreate.sh"
+	// Configure tool-specific properties.
+	// "customizations": {},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
